@@ -17,6 +17,9 @@ def playAssistantSound():
     music_dir = "www\\assets\\audio\\start_sound.mp3"
     playsound(music_dir)
 
+def NotFound(query):
+    speak(query+" was not found as a command!")
+
 def openCommand(query):
     query = query.replace(ASSISTANT_NAME, "")
     query = query.replace("open", "")
